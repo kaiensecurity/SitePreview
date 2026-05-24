@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title data-i18n="privacy_page_title">Política de Privacidade — Kaien Security</title>
+    <meta name="description" content="Política de Privacidade da Kaien Security. Saiba como coletamos, usamos e protegemos seus dados pessoais.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>K</text></svg>">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta name="theme-color" content="#000000">
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content" data-i18n="skip_link">Pular para o conteúdo principal</a>
+
+    <!-- NAVIGATION -->
+    <header class="site-header" role="banner">
+        <nav class="navbar" aria-label="Navegação principal">
+            <a href="index.html" class="navbar__logo" aria-label="Kaien Security — Início">
+                <svg class="navbar__logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="2" width="28" height="28" rx="4" fill="#ff2b2b" opacity="0.15"/>
+                    <path d="M8 20 L16 8" stroke="#ff2b2b" stroke-width="2.5" stroke-linecap="round"/>
+                    <path d="M12 20 L20 8" stroke="#ff2b2b" stroke-width="2.5" stroke-linecap="round"/>
+                    <path d="M16 20 L24 8" stroke="#ff2b2b" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+                <div class="navbar__logo-wordmark">
+                    <span class="navbar__logo-text">KAIEN</span>
+                    <span class="navbar__logo-sub">SECURITY</span>
+                </div>
+            </a>
+
+            <ul class="navbar__links" role="list">
+                <li><a href="index.html#servicos" data-i18n="nav_servicos">Serviços</a></li>
+                <li><a href="sobre.html" data-i18n="nav_sobre">Sobre</a></li>
+                <li><a href="index.html#abordagem" data-i18n="nav_abordagem">Abordagem</a></li>
+                <li><a href="index.html#insights" data-i18n="nav_insights">Insights</a></li>
+                <li><a href="index.html#contato" data-i18n="nav_contato">Contato</a></li>
+            </ul>
+
+            <button class="lang-toggle" id="lang-toggle" aria-label="Alterar idioma">
+                <span class="lang-toggle__pt active">PT-BR</span>
+                <span class="lang-toggle__divider">/</span>
+                <span class="lang-toggle__en">EN</span>
+            </button>
+
+            <a href="index.html#contato" class="btn btn--primary navbar__cta" data-i18n="cta_talk">
+                Falar com um especialista
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </a>
+
+            <button class="navbar__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+                <span class="navbar__toggle-icon" aria-hidden="true"></span>
+            </button>
+        </nav>
+
+        <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Navegação mobile">
+            <ul role="list">
+                <li><a href="index.html#servicos" data-i18n="nav_servicos">Serviços</a></li>
+                <li><a href="sobre.html" data-i18n="nav_sobre">Sobre</a></li>
+                <li><a href="index.html#abordagem" data-i18n="nav_abordagem">Abordagem</a></li>
+                <li><a href="index.html#insights" data-i18n="nav_insights">Insights</a></li>
+                <li><a href="index.html#contato" data-i18n="nav_contato">Contato</a></li>
+                <li><a href="index.html#contato" class="btn btn--primary" data-i18n="cta_talk">Falar com um especialista</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <!-- PAGE HEADER -->
+        <section class="hero section">
+            <div class="container hero__inner">
+                <div class="hero__content">
+                    <p class="hero__tagline" data-i18n="privacy_tagline">
+                        <span class="hero__tagline-line" aria-hidden="true"></span>
+                        Legal
+                    </p>
+                    <h1 class="hero__title" data-i18n="privacy_title">
+                        Política de<br>
+                        <span class="text-accent">Privacidade.</span>
+                    </h1>
+                    <p class="hero__description" data-i18n="privacy_lead">
+                        Como coletamos, usamos e protegemos<br>
+                        seus dados pessoais.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRIVACY POLICY CONTENT -->
+        <section class="about-story section">
+            <div class="container about-story__inner">
+                <div class="about-story__text">
+
+                    <h2 data-i18n="privacy_sec1_title">1. Coleta de Dados</h2>
+                    <p data-i18n="privacy_sec1_text">
+                        Coletamos dados pessoais que você nos fornece voluntariamente ao entrar em contato,
+                        preencher formulários, solicitar serviços ou se inscrever em nossa newsletter.
+                        Isso inclui nome, e-mail, empresa, cargo e informações de contato.
+                        Também coletamos automaticamente dados de navegação como endereço IP, tipo de
+                        navegador, páginas visitadas e tempo de permanência no site.
+                    </p>
+
+                    <h2 data-i18n="privacy_sec2_title">2. Finalidade da Coleta</h2>
+                    <p data-i18n="privacy_sec2_text">
+                        Utilizamos seus dados para: responder a solicitações de contato; fornecer e personalizar
+                        nossos serviços de consultoria; enviar comunicados e atualizações relevantes; melhorar
+                        a experiência do nosso site e serviços; cumprir obrigações legais e regulatórias.
+                    </p>
+
+                    <h2 data-i18n="privacy_sec3_title">3. Armazenamento e Segurança</h2>
+                    <p data-i18n="privacy_sec3_text">
+                        Seus dados são armazenados em sistemas seguros com controles de acesso restrito.
+                        Utilizamos criptografia, firewalls e procedimentos de segurança para proteger
+                        suas informações contra acesso não autorizado, perda ou alteração. Os dados são
+                        retidos apenas pelo tempo necessário para cumprir as finalidades declaradas.
+                    </p>
+
+                    <h2 data-i18n="privacy_sec4_title">4. Compartilhamento de Dados</h2>
+                    <p data-i18n="privacy_sec4_text">
+                        Não vendemos ou compartilhamos seus dados pessoais com terceiros para fins de
+                        marketing. Podemos compartilhar informações apenas com parceiros de infraestrutura
+                        (hospedagem, análise de site) que possuem compromissos contratuais de proteção
+                        de dados, ou quando exigido por lei.
+                    </p>
+
+                    <h2 data-i18n="privacy_sec5_title">5. Cookies e Tecnologias de Rastreamento</h2>
+                    <p data-i18n="privacy_sec5_text">
+                        Nosso site pode utilizar cookies e tecnologias semelhantes para melhorar a experiência
+                        de navegação, analisar o uso do site e personalizar o conteúdo. Você pode controlar
+                        a aceitação de cookies através das configurações do seu navegador.
+                    </p>
+
+                    <h2 data-i18n="privacy_sec6_title">6. Seus Direitos</h2>
+                    <p data-i18n="privacy_sec6_text">
+                        Você tem o direito de acessar, corrigir ou solicitar a exclusão dos seus dados pessoais.
+                        Pode também revogar o consentimento a qualquer momento, solicitar a portabilidade de
+                        dados ou se opor ao processamento. Para exercer esses direitos, entre em contato
+                        pelo e-mail contact@kaiensecurity.com.
+                    </p>
+
+                    <h2 data-i18n="privacy_sec7_title">7. Alterações nesta Política</h2>
+                    <p data-i18n="privacy_sec7_text">
+                        Esta política pode ser atualizada periodicamente para refletir mudanças em nossas
+                        práticas ou exigências legais. A data da última atualização será indicada no topo
+                        desta página. Recomendamos que você revise esta política periodicamente.
+                    </p>
+
+                    <h2 data-i18n="privacy_sec8_title">8. Contato</h2>
+                    <p data-i18n="privacy_sec8_text">
+                        Caso tenha dúvidas sobre esta Política de Privacidade ou sobre o tratamento dos seus
+                        dados, entre em contato conosco pelo e-mail contact@kaiensecurity.com.
+                    </p>
+
+                    <p data-i18n="privacy_updated"><strong>Última atualização: Maio de 2026.</strong></p>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="site-footer__inner">
+                <div class="site-footer__brand">
+                    <a href="index.html" class="site-footer__logo" aria-label="Kaien Security — Início">
+                        <svg class="site-footer__logo-icon" width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="2" width="28" height="28" rx="4" fill="#ff2b2b" opacity="0.15"/>
+                            <path d="M8 20 L16 8" stroke="#ff2b2b" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M12 20 L20 8" stroke="#ff2b2b" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M16 20 L24 8" stroke="#ff2b2b" stroke-width="2.5" stroke-linecap="round"/>
+                        </svg>
+                        <div class="site-footer__logo-wordmark">
+                            <span class="site-footer__logo-text">KAIEN</span>
+                            <span class="site-footer__logo-sub">SECURITY</span>
+                        </div>
+                    </a>
+                    <p class="site-footer__description" data-i18n="footer_desc">
+                        Consultoria especializada em WAF, Pentest e IAM<br>
+                        para empresas que constroem o futuro na web.
+                    </p>
+                    <div class="site-footer__social" role="list" aria-label="Redes sociais">
+                        <a href="https://linkedin.com/company/kaiensecurity" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn" role="listitem">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05a3.83 3.83 0 013.69-1.85c3.94 0 4.67 2.6 4.67 6v5.74zM5.34 7.43a2.06 2.06 0 11-.01-4.13 2.06 2.06 0 01.01 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77A1.75 1.75 0 000 1.73v20.54A1.75 1.75 0 001.77 24h20.45A1.75 1.75 0 0024 22.27V1.73A1.75 1.75 0 0022.22 0z"/></svg>
+                        </a>
+                        <a href="https://github.com/kaiensecurity" rel="noopener noreferrer" target="_blank" aria-label="GitHub" role="listitem">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        </a>
+                        <a href="https://instagram.com/kaiensecurity" rel="noopener noreferrer" target="_blank" aria-label="Instagram" role="listitem">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="site-footer__nav">
+                    <div class="site-footer__column">
+                        <h4 data-i18n="footer_servicos">Serviços</h4>
+                        <ul role="list">
+                            <li><a href="index.html#servicos" data-i18n="footer_svc1">WAF & Proteção de Aplicações</a></li>
+                            <li><a href="index.html#servicos" data-i18n="footer_svc2">Pentest & Offensive Security</a></li>
+                            <li><a href="index.html#servicos" data-i18n="footer_svc3">IAM & Segurança de Identidades</a></li>
+                        </ul>
+                    </div>
+                    <div class="site-footer__column">
+                        <h4 data-i18n="footer_empresa">Empresa</h4>
+                        <ul role="list">
+                            <li><a href="sobre.html" data-i18n="footer_sobre">Sobre</a></li>
+                            <li><a href="index.html#abordagem" data-i18n="footer_abordagem">Abordagem</a></li>
+                            <li><a href="index.html#insights" data-i18n="footer_insights">Insights</a></li>
+                            <li><a href="index.html#contato" data-i18n="footer_contato_link">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="site-footer__column">
+                        <h4 data-i18n="footer_contato">Contato</h4>
+                        <ul role="list">
+                            <li><a href="mailto:contact@kaiensecurity.com">contact@kaiensecurity.com</a></li>
+                            <li><span>São Paulo, Brasil</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="site-footer__bottom">
+                <p data-i18n="footer_copy">© 2026 Kaien Security. Todos os direitos reservados.</p>
+                <div class="site-footer__legal">
+                    <a href="privacy.html" data-i18n="footer_privacy">Política de Privacidade</a>
+                    <a href="terms.html" data-i18n="footer_terms">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5511943952017" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Fale conosco pelo WhatsApp">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <span class="whatsapp-float__text" data-i18n="whatsapp_text">Falar com especialista</span>
+    </a>
+
+    <script nonce="kaien2024" src="js/wave.js"></script>
+    <script nonce="kaien2024" src="js/i18n.js"></script>
+    <script nonce="kaien2024" src="js/main.js"></script>
+</body>
+</html>

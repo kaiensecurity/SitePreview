@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Kaien Security — Consultoria em Segurança de Aplicações</title>
+    <meta name="description" content="Consultoria especializada em WAF, Pentest e IAM para reduzir riscos, fortalecer sua arquitetura e garantir resiliência em escala.">
+
+    <link rel="canonical" href="https://kaiensecurity.com/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kaien Security — Consultoria em Segurança de Aplicações">
+    <meta property="og:description" content="Proteção estratégica para aplicações que movem negócios. WAF, Pentest, IAM e AppSec.">
+    <meta property="og:url" content="https://kaiensecurity.com/">
+    <meta property="og:site_name" content="Kaien Security">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:image" content="https://kaiensecurity.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Kaien Security — Proteção estratégica">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kaien Security — Consultoria em Segurança de Aplicações">
+    <meta name="twitter:description" content="Proteção estratégica para aplicações que movem negócios.">
+    <meta name="twitter:image" content="https://kaiensecurity.com/og-image.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>K</text></svg>">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self';
+                   script-src 'self' 'nonce-kaien2024';
+                   style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
+                   font-src https://fonts.gstatic.com;
+                   img-src 'self' data: svg;
+                   connect-src 'self';
+                   frame-ancestors 'none';
+                   base-uri 'self';
+                   form-action 'self';">
+
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta name="theme-color" content="#000000">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Kaien Security",
+        "url": "https://kaiensecurity.com",
+        "description": "Consultoria especializada em WAF, Pentest e IAM para empresas que constroem o futuro na web.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "São Paulo",
+            "addressCountry": "BR"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "sales",
+            "email": "contact@kaiensecurity.com"
+        },
+        "sameAs": [
+            "https://linkedin.com/company/kaiensecurity",
+            "https://github.com/kaiensecurity",
+            "https://instagram.com/kaiensecurity"
+        ]
+    }
+    </script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content" data-i18n="skip_link">Pular para o conteúdo principal</a>
+
+    <!-- ============================================================
+         NAVIGATION
+         ============================================================ -->
+    <header class="site-header" role="banner">
+        <nav class="navbar" aria-label="Navegação principal">
+            <a href="/" class="navbar__logo" aria-label="Kaien Security — Início">
+                <!-- Stacked red slash logo matching reference -->
+                <svg class="navbar__logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="2" width="28" height="28" rx="4" fill="#ff2b2b" opacity="0.15"/>
+                    <path d="M8 20 L16 8" stroke="#ff2b2b" stroke-width="2.5" stroke-linecap="round"/>
+                    <path d="M12 20 L20 8" stroke="#ff2b2b" stroke-width="2.5" stroke-linecap="round"/>
+                    <path d="M16 20 L24 8" stroke="#ff2b2b" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+                <div class="navbar__logo-wordmark">
+                    <span class="navbar__logo-text">KAIEN</span>
+                    <span class="navbar__logo-sub">SECURITY</span>
+                </div>
+            </a>
+
+            <ul class="navbar__links" role="list">
+                <li><a href="#servicos" data-i18n="nav_servicos">Serviços</a></li>
+                <li><a href="sobre.html" data-i18n="nav_sobre">Sobre</a></li>
+                <li><a href="#abordagem" data-i18n="nav_abordagem">Abordagem</a></li>
+                <li><a href="#insights" data-i18n="nav_insights">Insights</a></li>
+                <li><a href="#contato" data-i18n="nav_contato">Contato</a></li>
+            </ul>
+
+            <button class="lang-toggle" id="lang-toggle" aria-label="Alterar idioma">
+                <span class="lang-toggle__pt active">PT-BR</span>
+                <span class="lang-toggle__divider">/</span>
+                <span class="lang-toggle__en">EN</span>
+            </button>
+
+            <a href="#contato" class="btn btn--primary navbar__cta" data-i18n="cta_talk">
+                Falar com um especialista
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </a>
+
+            <button class="navbar__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+                <span class="navbar__toggle-icon" aria-hidden="true"></span>
+            </button>
+        </nav>
+
+        <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Navegação mobile">
+            <ul role="list">
+                <li><a href="#servicos" data-i18n="nav_servicos">Serviços</a></li>
+                <li><a href="sobre.html" data-i18n="nav_sobre">Sobre</a></li>
+                <li><a href="#abordagem" data-i18n="nav_abordagem">Abordagem</a></li>
+                <li><a href="#insights" data-i18n="nav_insights">Insights</a></li>
+                <li><a href="#contato" data-i18n="nav_contato">Contato</a></li>
+                <li><a href="#contato" class="btn btn--primary" data-i18n="cta_talk">Falar com um especialista</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <!-- ============================================================
+             HERO SECTION
+             ============================================================ -->
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="container hero__inner">
+                <div class="hero__content">
+                    <p class="hero__tagline">
+                        <span class="hero__tagline-line" aria-hidden="true"></span>
+                        AppSec, WAF, IAM, Pentest
+                    </p>
+                    <h1 id="hero-heading" class="hero__title" data-i18n="hero_title">
+                        Proteção estratégica<br>
+                        para <span class="text-accent">aplicações</span><br>
+                        que movem negócios.
+                    </h1>
+                    <p class="hero__description" data-i18n="hero_description">
+                        Consultoria especializada em segurança de aplicações,<br>
+                        WAF, Pentest e IAM para reduzir riscos, fortalecer sua<br>
+                        arquitetura e garantir resiliência em escala.
+                    </p>
+                    <div class="hero__actions">
+                        <a href="#contato" class="btn btn--primary" data-i18n="cta_talk">
+                            Falar com um especialista
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                        </a>
+                        <a href="#servicos" class="btn btn--outline" data-i18n="hero_btn_services">
+                            Nossos serviços
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Flowing topographic wave — canvas-rendered for organic density -->
+                <div class="hero__visual" aria-hidden="true">
+                    <img class="hero__canvas" src="Onda.jpg" alt="" loading="lazy">
+
+                    <!-- Side labels matching reference -->
+                    <div class="hero__labels">
+                        <span data-i18n="hero_prevenir">Prevenir</span>
+                        <span data-i18n="hero_proteger">Proteger</span>
+                        <span data-i18n="hero_detectar">Detectar</span>
+                        <span data-i18n="hero_evoluir">Evoluir</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             TRUST BAR
+             ============================================================ -->
+        <section class="trust-bar" aria-label="Empresas que confiam na Kaien Security">
+            <div class="container">
+                <p class="trust-bar__label" data-i18n="trust_label">Empresas que confiam na Kaien Security</p>
+                <div class="trust-bar__logos" role="list">
+                    <span class="trust-bar__logo" role="listitem">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.2"/><path d="M5 8h6M8 5v6" stroke="currentColor" stroke-width="1"/></svg>
+                        FinanZero
+                    </span>
+                    <span class="trust-bar__logo" role="listitem">aveni</span>
+                    <span class="trust-bar__logo" role="listitem">
+                        onfly
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1"/><path d="M8 2v12M2 8h12M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="0.6"/></svg>
+                    </span>
+                    <span class="trust-bar__logo" role="listitem">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 4l5 4 5-4M3 8l5 4 5-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        InfraCommerce
+                    </span>
+                    <span class="trust-bar__logo" role="listitem">instor</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             SERVICES SECTION
+             ============================================================ -->
+        <section id="servicos" class="services section" aria-labelledby="services-heading">
+            <div class="container">
+                <div class="services__header">
+                    <div class="services__header-left">
+                        <p class="section__label" data-i18n="services_label">Serviços</p>
+                        <h2 id="services-heading" class="section__title" data-i18n="services_title">
+                            Soluções técnicas.<br>
+                            Impacto <span class="text-accent">real.</span>
+                        </h2>
+                    </div>
+                    <p class="services__header-right" data-i18n="services_lead">
+                        Atuamos nas camadas críticas da sua aplicação<br>
+                        com profundidade técnica e abordagem consultiva.
+                    </p>
+                </div>
+
+                <div class="services__grid">
+                    <!-- Card 01 -->
+                    <a href="waf.html" class="service-card reveal">
+                        <div class="service-card__header">
+                            <div class="service-card__icon" aria-hidden="true">
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4" y="4" width="28" height="28" rx="6" stroke="currentColor" stroke-width="1.2"/>
+                                    <path d="M10 14l8-5 8 5" stroke="currentColor" stroke-width="1.2"/>
+                                    <path d="M10 22l8 5 8-5" stroke="currentColor" stroke-width="1.2"/>
+                                    <path d="M10 18h16" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+                                </svg>
+                            </div>
+                            <span class="service-card__number">01</span>
+                        </div>
+                        <h3 class="service-card__title" data-i18n="svc1_title">WAF & Proteção de Aplicações</h3>
+                        <p class="service-card__description" data-i18n="svc1_desc">
+                            Implementação, hardening e gestão de WAF para proteção Layer 7
+                            contra ataques e abusos.
+                        </p>
+                        <span class="service-card__link">
+                            <span data-i18n="saiba_mais">Saiba mais</span>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                        </span>
+                    </a>
+
+                    <!-- Card 02 -->
+                    <a href="pentest.html" class="service-card reveal">
+                        <div class="service-card__header">
+                            <div class="service-card__icon" aria-hidden="true">
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="18" cy="18" r="13" stroke="currentColor" stroke-width="1.2"/>
+                                    <circle cx="18" cy="18" r="4" stroke="currentColor" stroke-width="1.2"/>
+                                    <path d="M18 5v4M18 27v4M5 18h4M27 18h4" stroke="currentColor" stroke-width="1.2"/>
+                                </svg>
+                            </div>
+                            <span class="service-card__number">02</span>
+                        </div>
+                        <h3 class="service-card__title" data-i18n="svc2_title">Pentest & Offensive Security</h3>
+                        <p class="service-card__description" data-i18n="svc2_desc">
+                            Testes de invasão manuais para identificar vulnerabilidades reais
+                            e fortalecer sua superfície de ataque.
+                        </p>
+                        <span class="service-card__link">
+                            <span data-i18n="saiba_mais">Saiba mais</span>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                        </span>
+                    </a>
+
+                    <!-- Card 03 -->
+                    <a href="iam.html" class="service-card reveal">
+                        <div class="service-card__header">
+                            <div class="service-card__icon" aria-hidden="true">
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="18" cy="13" r="5" stroke="currentColor" stroke-width="1.2"/>
+                                    <path d="M8 30c0-5.5 4.5-10 10-10s10 4.5 10 10" stroke="currentColor" stroke-width="1.2"/>
+                                    <path d="M25 14l3 3 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <span class="service-card__number">03</span>
+                        </div>
+                        <h3 class="service-card__title" data-i18n="svc3_title">IAM & Segurança de Identidades</h3>
+                        <p class="service-card__description" data-i18n="svc3_desc">
+                            Projetos e avaliações de identidade e acesso para reduzir riscos
+                            e garantir o princípio do menor privilégio.
+                        </p>
+                        <span class="service-card__link">
+                            <span data-i18n="saiba_mais">Saiba mais</span>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                        </span>
+                    </a>
+
+                    <!-- Card 04 -->
+                    <a href="phishing.html" class="service-card reveal">
+                        <div class="service-card__header">
+                            <div class="service-card__icon" aria-hidden="true">
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="6" y="8" width="24" height="20" rx="2" stroke="currentColor" stroke-width="1.2"/>
+                                    <path d="M6 12h24" stroke="currentColor" stroke-width="1.2"/>
+                                    <path d="M12 18l3 3 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <span class="service-card__number">04</span>
+                        </div>
+                        <h3 class="service-card__title" data-i18n="svc4_title">Phishing & Engenharia Social</h3>
+                        <p class="service-card__description" data-i18n="svc4_desc">
+                            Campanhas simuladas de phishing para avaliar e fortalecer a
+                            conscientização da sua organização contra ataques sociais.
+                        </p>
+                        <span class="service-card__link">
+                            <span data-i18n="saiba_mais">Saiba mais</span>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                        </span>
+                    </a>
+
+                    <!-- Card 05 -->
+                    <a href="educacao.html" class="service-card reveal">
+                        <div class="service-card__header">
+                            <div class="service-card__icon" aria-hidden="true">
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 6L4 12l14 6 14-6L18 6z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+                                    <path d="M8 15v8c0 0 4 4 10 4s10-4 10-4v-8" stroke="currentColor" stroke-width="1.2"/>
+                                    <path d="M14 22h8" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <span class="service-card__number">05</span>
+                        </div>
+                        <h3 class="service-card__title" data-i18n="svc5_title">Educação em Segurança da Informação</h3>
+                        <p class="service-card__description" data-i18n="svc5_desc">
+                            Programas de treinamento e aprendizado em segurança da
+                            informação para elevar a maturidade da sua organização.
+                        </p>
+                        <span class="service-card__link">
+                            <span data-i18n="saiba_mais">Saiba mais</span>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             APPROACH SECTION
+             ============================================================ -->
+        <section id="abordagem" class="approach section" aria-labelledby="approach-heading">
+            <div class="container">
+                <div class="approach__inner">
+                    <div class="approach__left">
+                        <p class="section__label" data-i18n="approach_label">Abordagem</p>
+                        <h2 id="approach-heading" class="section__title" data-i18n="approach_title">
+                            Profundidade que gera<br>
+                            <span class="text-accent">confiança.</span>
+                        </h2>
+                    </div>
+
+                    <div class="approach__features">
+                        <div class="approach__feature reveal">
+                            <div class="approach__feature-icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.2"/>
+                                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.2"/>
+                                    <path d="M12 4v2M12 18v2M4 12h2M18 12h2" stroke="currentColor" stroke-width="1"/>
+                                </svg>
+                            </div>
+                            <h3 class="approach__feature-title" data-i18n="feat1_title">Foco em risco real</h3>
+                            <p class="approach__feature-text" data-i18n="feat1_text">Priorizamos o que realmente importa para o seu negócio.</p>
+                        </div>
+
+                        <div class="approach__feature reveal">
+                            <div class="approach__feature-icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 8L3 12l5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16 8l5 4-5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M14 5l-4 14" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <h3 class="approach__feature-title" data-i18n="feat2_title">Visão técnica e prática</h3>
+                            <p class="approach__feature-text" data-i18n="feat2_text">Soluções aplicáveis, alinhadas à sua arquitetura.</p>
+                        </div>
+
+                        <div class="approach__feature reveal">
+                            <div class="approach__feature-icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 6c0-1.1.9-2 2-2h12a2 2 0 012 2v8a2 2 0 01-2 2h-3l-3 3v-3H6a2 2 0 01-2-2V6z" stroke="currentColor" stroke-width="1.2" fill="none"/>
+                                </svg>
+                            </div>
+                            <h3 class="approach__feature-title" data-i18n="feat3_title">Transparência total</h3>
+                            <p class="approach__feature-text" data-i18n="feat3_text">Comunicação clara e objetiva em todas as etapas.</p>
+                        </div>
+
+                        <div class="approach__feature reveal">
+                            <div class="approach__feature-icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 12c-2-3-6-5-8-3s2 5 4 5 2-1 4-2 4 1 4 2 2-3 4-5-6 0-8 3z" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h3 class="approach__feature-title" data-i18n="feat4_title">Parceria contínua</h3>
+                            <p class="approach__feature-text" data-i18n="feat4_text">Acompanhamento consultivo pós-projeto para manter o nível de segurança elevado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             CTA SECTION
+             ============================================================ -->
+        <section id="contato" class="cta section" aria-labelledby="cta-heading">
+            <div class="container">
+                <div class="cta__inner reveal">
+                    <div class="cta__left">
+                        <p class="cta__label" data-i18n="cta_label">Pronto para fortalecer?</p>
+                        <h2 id="cta-heading" class="cta__title" data-i18n="cta_title"
+                            Vamos elevar o nível da<br>
+                            segurança da sua <span class="text-accent">aplicação.</span>
+                        </h2>
+                    </div>
+                    <div class="cta__right">
+                        <p class="cta__text" data-i18n="cta_text">
+                            Fale com um especialista e descubra como<br>
+                            podemos ajudar sua empresa a evoluir<br>
+                            com mais segurança.
+                        </p>
+                        <a href="contato.html" class="btn btn--primary btn--cta" data-i18n="cta_talk">
+                            Falar com um especialista
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============================================================
+         FOOTER
+         ============================================================ -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="site-footer__inner">
+                <div class="site-footer__brand">
+                    <a href="/" class="site-footer__logo" aria-label="Kaien Security — Início">
+                        <svg class="site-footer__logo-icon" width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="2" width="28" height="28" rx="4" fill="#ff2b2b" opacity="0.15"/>
+                            <path d="M8 20 L16 8" stroke="#ff2b2b" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M12 20 L20 8" stroke="#ff2b2b" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M16 20 L24 8" stroke="#ff2b2b" stroke-width="2.5" stroke-linecap="round"/>
+                        </svg>
+                        <div class="site-footer__logo-wordmark">
+                            <span class="site-footer__logo-text">KAIEN</span>
+                            <span class="site-footer__logo-sub">SECURITY</span>
+                        </div>
+                    </a>
+                    <p class="site-footer__description" data-i18n="footer_desc">
+                        Consultoria especializada em WAF, Pentest e IAM<br>
+                        para empresas que constroem o futuro na web.
+                    </p>
+                    <div class="site-footer__social" role="list" aria-label="Redes sociais">
+                        <!-- LinkedIn -->
+                        <a href="https://linkedin.com/company/kaiensecurity" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn" role="listitem">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05a3.83 3.83 0 013.69-1.85c3.94 0 4.67 2.6 4.67 6v5.74zM5.34 7.43a2.06 2.06 0 11-.01-4.13 2.06 2.06 0 01.01 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77A1.75 1.75 0 000 1.73v20.54A1.75 1.75 0 001.77 24h20.45A1.75 1.75 0 0024 22.27V1.73A1.75 1.75 0 0022.22 0z"/></svg>
+                        </a>
+                        <!-- GitHub -->
+                        <a href="https://github.com/kaiensecurity" rel="noopener noreferrer" target="_blank" aria-label="GitHub" role="listitem">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        </a>
+                        <!-- Instagram -->
+                        <a href="https://instagram.com/kaiensecurity" rel="noopener noreferrer" target="_blank" aria-label="Instagram" role="listitem">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="site-footer__nav">
+                    <div class="site-footer__column">
+                        <h4 data-i18n="footer_servicos">Serviços</h4>
+                        <ul role="list">
+                            <li><a href="#servicos" data-i18n="footer_svc1">WAF & Proteção de Aplicações</a></li>
+                            <li><a href="#servicos" data-i18n="footer_svc2">Pentest & Offensive Security</a></li>
+                            <li><a href="#servicos" data-i18n="footer_svc3">IAM & Segurança de Identidades</a></li>
+                        </ul>
+                    </div>
+                    <div class="site-footer__column">
+                        <h4 data-i18n="footer_empresa">Empresa</h4>
+                        <ul role="list">
+                            <li><a href="sobre.html" data-i18n="footer_sobre">Sobre</a></li>
+                            <li><a href="#abordagem" data-i18n="footer_abordagem">Abordagem</a></li>
+                            <li><a href="#insights" data-i18n="footer_insights">Insights</a></li>
+                            <li><a href="#contato" data-i18n="footer_contato_link">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="site-footer__column">
+                        <h4 data-i18n="footer_contato">Contato</h4>
+                        <ul role="list">
+                            <li><a href="mailto:contact@kaiensecurity.com">contact@kaiensecurity.com</a></li>
+                            <li><span>São Paulo, Brasil</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="site-footer__bottom">
+                <p data-i18n="footer_copy">© 2026 Kaien Security. Todos os direitos reservados.</p>
+                <div class="site-footer__legal">
+                    <a href="privacy.html" data-i18n="footer_privacy">Política de Privacidade</a>
+                    <a href="terms.html" data-i18n="footer_terms">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5511943952017" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Fale conosco pelo WhatsApp">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <span class="whatsapp-float__text" data-i18n="whatsapp_text">Falar com especialista</span>
+    </a>
+
+    <script nonce="kaien2024" src="js/wave.js"></script>
+    <script nonce="kaien2024" src="js/i18n.js"></script>
+    <script nonce="kaien2024" src="js/main.js"></script>
+</body>
+</html>
