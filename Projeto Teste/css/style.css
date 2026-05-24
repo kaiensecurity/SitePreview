@@ -112,7 +112,7 @@
     --transition-slow: 400ms ease;
 
     --z-nav: 100;
-    --z-mobile-menu: 99;
+    --z-mobile-menu: 101;
 }
 
 /* ============================================================
@@ -478,7 +478,7 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: var(--z-mobile-menu);
+    z-index: 9999;
     background: rgba(0, 0, 0, 0.95);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -1475,6 +1475,11 @@ a {
 
     .navbar__toggle {
         display: flex;
+    }
+
+    .mobile-menu {
+        position: absolute;
+        z-index: 9999;
     }
 
     .hero {
